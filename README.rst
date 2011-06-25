@@ -8,8 +8,8 @@ in a same manner as Firefox, OpenOffice and other applications.
 Contact
 -------
 
-Author: Christian Luginbühl <dinkel@pimprecords.com>
-Home:   <http://github.com/dinkel/gedit-zoom>
+- Author: Christian Luginbühl dinkel@pimprecords.com
+- Home:   http://github.com/dinkel/gedit-zoom
 
 License
 -------
@@ -22,7 +22,7 @@ Development
 It proved helpful for development to check out the git-repository to your
 favourite location and create symlinks in your personal plugins directory to
 the necessary files and directories. There is a make target, that accomplishes
-this:
+this::
 
 $ make install-dev
 
@@ -30,8 +30,8 @@ $ make install-dev
 Install
 -------
 
-Simply extract the package into the ~/.gnome2/gedit/plugins directory, or - for
-a system-wide delpoyment - into /usr/lib/gedit-2/plugins (the path may be
+Simply extract the package into the `~/.gnome2/gedit/plugins` directory, or - for
+a system-wide delpoyment - into `/usr/lib/gedit-2/plugins` (the path may be
 different, depending on your distribution).
 
 Then activate and configure the plugin through Edit -> Preferences -> Plugins.
