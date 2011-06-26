@@ -1,5 +1,5 @@
 # Brazilian Portuguese translations for gedit-zoom package.
-# Copyright (c) 2011 Hugo Heniques Maia Vieira
+# Copyright (C) 2010 Christian Luginbühl
 # This file is distributed under the same license as the gedit-zoom package.
 # Hugo Maia Vieira <hugomaiavieira@gmail.com>, 2011.
 #
@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gedit-zoom 0.1.0\n"
 "Report-Msgid-Bugs-To: dinkel@pimprecords.com\n"
-"POT-Creation-Date: 2010-05-08 18:00+0200\n"
-"PO-Revision-Date: 2010-05-08 18:00+0200\n"
+"POT-Creation-Date: 2011-06-26 18:00+0200\n"
+"PO-Revision-Date: 2011-06-26 18:00+0200\n"
 "Last-Translator: Hugo Maia Vieira <hugomaiavieira@gmail.com>\n"
 "Language-Team: Brazilian Portuguese\n"
 "MIME-Version: 1.0\n"
