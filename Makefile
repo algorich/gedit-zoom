@@ -15,7 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # Version of the program (to be updated when creating new packages)
-VERSION=0.2.1
+VERSION=0.2.2
 
 # Name of the program
 APPLICATION=gedit-zoom
