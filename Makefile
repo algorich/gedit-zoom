@@ -1,4 +1,4 @@
-# Whitespace Remover - gedit plugin
+# Zoom - gedit plugin
 # Copyright (C) 2010 Christian Luginbühl
 #
 # This program is free software: you can redistribute it and/or modify
@@ -32,10 +32,7 @@ DOMAIN=messages
 
 # Dummy target, that intercepts the call to 'make' (without explicit target)
 dummy:
-	echo "Possible targets are: dist, tgz, zip, update-locales, create-locale LOCALE={ll[_CC]}, test, disttest, clean, mrproper, install, install-dev, uninstall\n"
-
-# Tests and on success creates the packages
-safe-dist: test dist
+	echo "Possible targets are: dist, tgz, zip, update-locales, create-locale LOCALE={ll[_CC]}, clean, mrproper, install, install-dev, uninstall\n"
 
 # Creates the .zip and .tar.gz packages
 dist: tgz zip
@@ -43,7 +40,7 @@ dist: tgz zip
 # Packs everything needed to be deployed as a plugin into a gzipped tar
 tgz: _create-distdir compile-locales
 	tar czf dist/$(APPLICATION)-$(VERSION).tar.gz \
-	        README \
+	        README.rst \
 	        $(SHORT_NAME).gedit-plugin \
 	        $(SHORT_NAME)/ \
 	        --exclude *.po \
@@ -56,7 +53,7 @@ tgz: _create-distdir compile-locales
 # Packs everything needed to be deployed as a plugin into a zip
 zip: _create-distdir compile-locales
 	zip -qr dist/$(APPLICATION)-$(VERSION).zip \
-	        README \
+	        README.rst \
 	        $(SHORT_NAME).gedit-plugin \
 	        $(SHORT_NAME)/ \
 	        -x *.po *.pyc
@@ -93,18 +90,6 @@ compile-locales:
 	     -type d \
 	     -exec msgfmt {}/$(DOMAIN).po -o {}/$(DOMAIN).mo \;
 
-# Runs all tests
-test: disttest
-#test: unittest disttest
-
-# Runs the unittests
-#unittest:
-#	python ./test/unit/alltests.py
-
-# Runs the disttests
-disttest:
-	python ./test/dist/locale_in_pluginfile_test.py
-
 # Cleans up the directory structure
 clean:
 	rm -rf dist/
@@ -118,7 +103,7 @@ mrproper: clean
 # Installs the plugin in ~/.gnome2/gedit/plugins
 install: safe-dist uninstall
 	tar zxfv dist/$(APPLICATION)-$(VERSION).tar.gz -C ~/.gnome2/gedit/plugins
-	rm ~/.gnome2/gedit/plugins/README
+	rm ~/.gnome2/gedit/plugins/README.rst
 
 # Symlinks the development version of the plugin in ~/.gnome2/gedit/plugins
 install-dev: uninstall
@@ -148,3 +133,4 @@ _generate-pot:
 	         --msgid-bugs-address=$(AUTHOR_EMAIL) \
 	         --output=$(DOMAIN).pot \
 	         $(SHORT_NAME)/*.py
+
