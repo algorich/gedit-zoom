@@ -101,7 +101,7 @@ mrproper: clean
 	find $(SHORT_NAME)/locale -name "*.mo" -exec rm {} \;
 
 # Installs the plugin in ~/.gnome2/gedit/plugins
-install: safe-dist uninstall
+install: uninstall
 	tar zxfv dist/$(APPLICATION)-$(VERSION).tar.gz -C ~/.gnome2/gedit/plugins
 	rm ~/.gnome2/gedit/plugins/README.rst
 
