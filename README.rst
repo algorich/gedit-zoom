@@ -30,8 +30,8 @@ $ make install-dev
 Install
 -------
 
-Simply extract the package into the `~/.gnome2/gedit/plugins` directory, or - for
-a system-wide delpoyment - into `/usr/lib/gedit-2/plugins` (the path may be
+Simply extract the package into the _~/.gnome2/gedit/plugins_ directory, or - for
+a system-wide deployment - into _/usr/lib/gedit-2/plugins_ (the path may be
 different, depending on your distribution).
 
 Then activate and configure the plugin through Edit -> Preferences -> Plugins.
