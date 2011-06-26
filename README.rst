@@ -2,7 +2,7 @@ Zoom - gedit plugin
 ===================
 
 This plugin for gedit - GNOME text editor - adds the ability to change the
-font size using either the menu bar, keyboard shortcuts or <ctrl>-mousewheel
+font size using either the menu bar, keyboard shortcuts or *<Ctrl>+mousewheel*
 in a same manner as Firefox, OpenOffice and other applications.
 
 Contact
@@ -30,8 +30,8 @@ $ make install-dev
 Install
 -------
 
-Simply extract the package into the _~/.gnome2/gedit/plugins_ directory, or - for
-a system-wide deployment - into _/usr/lib/gedit-2/plugins_ (the path may be
+Simply extract the package into the *~/.gnome2/gedit/plugins* directory, or - for
+a system-wide deployment - into */usr/lib/gedit-2/plugins* (the path may be
 different, depending on your distribution).
 
 Then activate and configure the plugin through Edit -> Preferences -> Plugins.
