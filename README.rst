@@ -1,9 +1,14 @@
 Zoom - gedit plugin
 ===================
 
-This plugin for gedit - GNOME text editor - adds the ability to change the
+This plugin for Gedit - GNOME text editor - adds the ability to change the
 font size using either the menu bar, keyboard shortcuts or *<Ctrl>+mousewheel*
-in a same manner as Firefox, OpenOffice and other applications.
+in a same manner as Firefox, LibreOffice and other applications.
+
+It is included in the Gmate_ package, a set of plugins and improvements to make
+Gedit a powerfull programmer text editor.
+
+.. _Gmate: http://github.com/gmate/gmate
 
 Install
 -------
